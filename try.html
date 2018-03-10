@@ -33,11 +33,20 @@
   <div class="total_post" style="visibility:hidden">
     2
   </div>
-  <div style="width:500px">
+  <div style="width:400px">
   <div class="ui fluid card">
 
     <div class="content">
-      <div class="right floated meta">14h</div>
+      <div class="right floated meta">
+           <div class="ui dropdown">
+          <i class="dropdown icon"></i>
+          <div class="menu" style="width:20px;">
+            <div class="item">Report</div>
+            <div class="item">Add Bookmark</div>
+            <div class="item">Block</div>
+          </div>
+        </div>
+      </div>
       <img class="ui avatar image" src="elliot.jpg"> <span class="user-name">Vedant Jain</span>
     </div>
     <div class="post-text">
@@ -53,9 +62,9 @@
     <i class="heart outline like icon"></i>
         <span style="cursor:pointer">Like</span>
       </div>
-      <div style="width:45%;cursor:pointer">
+      <div  class="show_comment" style="width:45%;cursor:pointer">
       <i class="comment outline icon"></i>
-        <span style="cursor:pointer">Comment</span>
+        <span style="cursor:pointer">8 Comments</span>
     </div>
     <div style="width:25%;cursor:pointer">
     <i class="share icon"></i>
@@ -240,7 +249,15 @@
   <div class="ui fluid card">
 
     <div class="content">
-      <div class="right floated meta">14h</div>
+      <div class="right floated meta">   <div class="ui dropdown">
+        <i class="dropdown icon"></i>
+        <div class="menu" style="width:20px;">
+          <div class="item">Report</div>
+          <div class="item">Add Bookmark</div>
+          <div class="item">Block</div>
+        </div>
+      </div>
+    </div>
       <img class="ui avatar image" src="elliot.jpg"> <span class="user-name">Vedant Jain</span>
     </div>
     <div class="post-text">
@@ -256,9 +273,9 @@
     <i class="heart outline like icon"></i>
         <span style="cursor:pointer">Like</span>
       </div>
-      <div style="width:45%;cursor:pointer">
+      <div class="show_comment" style="width:45%;cursor:pointer">
       <i class="comment outline icon"></i>
-        <span style="cursor:pointer">Comment</span>
+        <span style="cursor:pointer">5 Comments</span>
     </div>
     <div style="width:25%;cursor:pointer">
     <i class="share icon"></i>
@@ -411,13 +428,20 @@
 </div>
 <br><br><br><br><br><br>
 
+<script>
+$('.reply').click(function(){
+  if($(this).next('.extra.content').length == 0){
+    $("<div class='extra content'><div class='ui large transparent input' style='width:100%''><img class='ui avatar image' src='elliot.jpg'style='width:30px;height:30px'>&nbsp;&nbsp;&nbsp;<input class='add_comment' type='text' placeholder='Add a comment...' style='font-family: 'Nunito', sans-serif'></div><br><br><button class='mini ui button' style='background:#7e2444;color:white;margin-left:40px'>Reply</button></div>").insertAfter($(this));
+  }
+});
+</script>
+
   <script>
   $('.add_comment').blur(function(){
     if(!$(this).val()){
       $(this).parents('.extra.content').children('.mini.ui.button.add_btn.add_btn').hide();
     }
   });
-
 $('.add_comment').keyup(function(){
 
 $(this).parents('.extra.content').children('.mini.ui.button.add_btn.add_btn').show();
@@ -426,17 +450,28 @@ $(this).parents('.extra.content').children('.mini.ui.button.add_btn.add_btn').sh
 
   </script>
   <script>
+  //Working dropdown
+  $('.ui.dropdown').dropdown();
+  </script>
+  <script>
   //Hiding all extra comments on load of the page
   $(document).ready(function(){
     total_post = $('.total_post').html();
     for(i=0;i<=total_post-1;i++){
       total_comments = $('.ui.fluid.card').eq(i).children('.total_comments').html();
+      $('.ui.small.comments').eq(i).hide();
       start = Math.round(total_comments/4,0)+1;
       for(j=start;j<=total_comments;j++){
         $('.ui.small.comments').eq(i).children('.comment').eq(j).hide();
       }
     }
 
+  });
+  </script>
+  <script>
+  //endable or disable the Comments
+  $('.show_comment').click(function(){
+    $(this).parents('.ui.fluid.card').children('.ui.small.comments').toggle();
   });
   </script>
   <script>
