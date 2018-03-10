@@ -1,0 +1,463 @@
+<html>
+<head>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<script src="semantic.min.js"></script>
+<link href="semantic.min.css" rel="stylesheet" type="text/css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+ <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+ <style>
+ body{
+   margin-left:10%;
+   margin-top:5%;
+   font-family: 'Nunito', sans-serif;
+ }
+ .post-text{
+   padding:5px;
+   font-family: 'Nunito', sans-serif;
+ }
+ .user-name{
+   font-family: 'Jura', sans-serif;
+ }
+.mini.ui.button.add_btn.add_btn{
+   display: none;
+ }
+ .avatar img{
+   height:10px;
+   width:50px;
+ }
+ </style>
+</head>
+<body>
+  <div class="total_post" style="visibility:hidden">
+    2
+  </div>
+  <div style="width:500px">
+  <div class="ui fluid card">
+
+    <div class="content">
+      <div class="right floated meta">14h</div>
+      <img class="ui avatar image" src="elliot.jpg"> <span class="user-name">Vedant Jain</span>
+    </div>
+    <div class="post-text">
+    Keep Working Harder
+  </div>
+    <div class="image">
+
+      <img src="image.png">
+    </div>
+
+    <div class="content" style="display:flex;flex-direction: row;">
+      <div style="width:30%;cursor:pointer">
+    <i class="heart outline like icon"></i>
+        <span style="cursor:pointer">Like</span>
+      </div>
+      <div style="width:45%;cursor:pointer">
+      <i class="comment outline icon"></i>
+        <span style="cursor:pointer">Comment</span>
+    </div>
+    <div style="width:25%;cursor:pointer">
+    <i class="share icon"></i>
+      <span style="cursor:pointer">Share</span>
+  </div>
+    </div>
+    <div class="extra content">
+      <div class="ui large transparent input" style="width:100%">
+        <img class="ui avatar image" src="elliot.jpg">
+        &nbsp;&nbsp;&nbsp;
+        <input class="add_comment" type="text" placeholder="Add a comment..." style="font-family: 'Nunito', sans-serif">
+      </div>
+      <br><br>
+      <button class="mini ui button add_btn" style="background:#7e2444;color:white;margin-left:40px">
+        Post
+        </button>
+
+    </div>
+    <div class="ui small comments" style="padding:10px">
+    <h3 class="ui dividing header">Comments</h3>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Elliot Fu</a>
+        <div class="metadata">
+          <span class="date">Yesterday at 12:30AM</span>
+        </div>
+        <div class="text">
+          <p>This has been very useful for my research. Thanks as well!</p>
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <a class="avatar">
+             <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+          </a>
+          <div class="content">
+            <a class="author">Jenny Hess</a>
+            <div class="metadata">
+              <span class="date">Just now</span>
+            </div>
+            <div class="text">
+              Elliot you are always so right :)
+            </div>
+            <div class="actions">
+              <a class="reply">Reply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Joe Henderson</a>
+        <div class="metadata">
+          <span class="date">5 days ago</span>
+        </div>
+        <div class="text">
+          Dude, this is awesome. Thanks so much
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <a class="meta load_more">Load MoreComments</a>
+  </div>
+  <div class="total_comments" style="visibility:hidden">8</div>
+  <div class="offset" style="visibility:hidden"></div>
+  </div>
+  <div class="ui fluid card">
+
+    <div class="content">
+      <div class="right floated meta">14h</div>
+      <img class="ui avatar image" src="elliot.jpg"> <span class="user-name">Vedant Jain</span>
+    </div>
+    <div class="post-text">
+    Keep Working Harder
+  </div>
+    <div class="image">
+
+      <img src="image.png">
+    </div>
+
+    <div class="content" style="display:flex;flex-direction: row;">
+      <div style="width:30%;cursor:pointer">
+    <i class="heart outline like icon"></i>
+        <span style="cursor:pointer">Like</span>
+      </div>
+      <div style="width:45%;cursor:pointer">
+      <i class="comment outline icon"></i>
+        <span style="cursor:pointer">Comment</span>
+    </div>
+    <div style="width:25%;cursor:pointer">
+    <i class="share icon"></i>
+      <span style="cursor:pointer">Share</span>
+  </div>
+    </div>
+    <div class="extra content">
+      <div class="ui large transparent input" style="width:100%">
+        <img class="ui avatar image" src="elliot.jpg">
+        &nbsp;&nbsp;&nbsp;
+        <input class="add_comment" type="text" placeholder="Add a comment..." style="font-family: 'Nunito', sans-serif">
+      </div>
+      <br><br>
+      <button class="mini ui button add_btn" style="background:#7e2444;color:white;margin-left:40px">
+        Post
+        </button>
+
+    </div>
+    <div class="ui small comments" style="padding:10px">
+    <h3 class="ui dividing header">Comments</h3>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Elliot Fu</a>
+        <div class="metadata">
+          <span class="date">Yesterday at 12:30AM</span>
+        </div>
+        <div class="text">
+          <p>This has been very useful for my research. Thanks as well!</p>
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <a class="avatar">
+             <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+          </a>
+          <div class="content">
+            <a class="author">Jenny Hess</a>
+            <div class="metadata">
+              <span class="date">Just now</span>
+            </div>
+            <div class="text">
+              Elliot you are always so right :)
+            </div>
+            <div class="actions">
+              <a class="reply">Reply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Joe Henderson</a>
+        <div class="metadata">
+          <span class="date">5 days ago</span>
+        </div>
+        <div class="text">
+          Dude, this is awesome. Thanks so much
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+         <img class="ui avatar image" src="elliot.jpg"style="width:40px;height:40px">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <a class="meta load_more">Load MoreComments</a>
+
+  </div>
+    <div class="total_comments" style="visibility:hidden">5</div>
+    <div class="offset" style="visibility:hidden"></div>
+  </div>
+</div>
+<br><br><br><br><br><br>
+
+  <script>
+  $('.add_comment').blur(function(){
+    if(!$(this).val()){
+      $(this).parents('.extra.content').children('.mini.ui.button.add_btn.add_btn').hide();
+    }
+  });
+
+$('.add_comment').keyup(function(){
+
+$(this).parents('.extra.content').children('.mini.ui.button.add_btn.add_btn').show();
+});
+
+
+  </script>
+  <script>
+  //Hiding all extra comments on load of the page
+  $(document).ready(function(){
+    total_post = $('.total_post').html();
+    for(i=0;i<=total_post-1;i++){
+      total_comments = $('.ui.fluid.card').eq(i).children('.total_comments').html();
+      start = Math.round(total_comments/4,0)+1;
+      for(j=start;j<=total_comments;j++){
+        $('.ui.small.comments').eq(i).children('.comment').eq(j).hide();
+      }
+    }
+
+  });
+  </script>
+  <script>
+  //this code will show remaining comments on the click of the load more Comments
+  $('.meta.load_more').click(function(){
+  total_comments = parseInt($(this).parents('.ui.fluid.card').children('.total_comments').html());
+  if($(this).parents('.ui.fluid.card').children('.total_comments').siblings('.offset').html()){
+    offset = parseInt($(this).parents('.ui.fluid.card').children('.total_comments').siblings('.offset').html());
+    for(j=offset;j<=total_comments;j++){
+      $(this).parents('.ui.fluid.card').children('.ui.small.comments').find('.comment').eq(j).show();
+    }
+  }
+start = parseInt(Math.round(total_comments/4,0)+1);
+offset = Math.round((start + total_comments)/2,0);
+$(this).parents('.ui.fluid.card').children('.total_comments').siblings('.offset').text(offset);
+
+start = Math.round(total_comments/4,0)+1;
+for(j=start;j<=offset;j++){
+  $(this).parents('.ui.fluid.card').children('.ui.small.comments').find('.comment').eq(j).show();
+}
+  });
+  </script>
+</body>
+</html>
