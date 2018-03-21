@@ -447,8 +447,8 @@
 
 <script>
 $('.reply').click(function(){
-  if($(this).next('.extra.content').length == 0){
-    $("<div class='extra content'><div class='ui large transparent input' style='width:100%''><img class='ui avatar image' src='elliot.jpg'style='width:30px;height:30px'>&nbsp;&nbsp;&nbsp;<input class='add_comment' type='text' placeholder='Add a comment...' style='font-family: 'Nunito', sans-serif'></div><br><br><button class='mini ui button' style='background:#7e2444;color:white;margin-left:40px'>Reply</button></div>").insertAfter($(this));
+  if($(this).siblings('.replies').next('.extra.content').length == 0){
+    $("<div class='extra content'><div class='ui large transparent input' style='width:100%''><img class='ui avatar image' src='elliot.jpg'style='width:30px;height:30px'>&nbsp;&nbsp;&nbsp;<input class='add_comment' type='text' placeholder='Add a comment...' style='font-family: 'Nunito', sans-serif'></div><br><br><button class='mini ui button' style='background:#7e2444;color:white;margin-left:40px'>Reply</button></div>").insertAfter($(this).siblings('.replies'));
   }
 });
 </script>
