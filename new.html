@@ -1,0 +1,27 @@
+<script>
+  //this code will show remaining comments on the click of the load more Comments
+  $('.meta.load_more').click(function(){
+  total_comments = parseInt($(this).parents('.ui.fluid.card').children('.total_comments').html());
+  if($(this).parents('.ui.fluid.card').children('.total_comments').siblings('.offset').html()){
+    offset = parseInt($(this).parents('.ui.fluid.card').children('.total_comments').siblings('.offset').html());
+    start = offset;
+
+    for(j=start;j<=offset+3;j++){
+      $(this).parents('.ui.fluid.card').children('.ui.small.comments').find('.comment').eq(j).show();
+    }
+offset = offset +3;
+    $(this).parents('.ui.fluid.card').children('.total_comments').siblings('.offset').text(offset);
+  }else{
+    start = parseInt(Math.round(total_comments/4,0)+1);
+    offset = Math.round((start + total_comments)/2,0);
+    $(this).parents('.ui.fluid.card').children('.total_comments').siblings('.offset').text(offset);
+
+    //start = Math.round(total_comments/4,0)+1;
+    for(j=start;j<=offset;j++){
+      $(this).parents('.ui.fluid.card').children('.ui.small.comments').find('.comment').eq(j).show();
+    }
+
+  }
+alert(offset);
+  });
+  </script>
